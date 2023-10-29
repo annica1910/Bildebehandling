@@ -45,17 +45,20 @@ Adjust the parameter of the specific bit depth requirement as desired.
 
  This code showcases two distinct image manipulation techniques: Manipulating an input image, involving pixel-wise arithmetic operations and with a simplified approach utilizing element-wise multiplication.
 
- ## Assignment 1
+ ## Assignments
 
 **Running the code**
+
 Simply execute the script as you would with any standard Python program. The provided code performs the specified tasks and generates the desired output.
 
 ### Oblig 1
 
 **Task 1 - Preprocessing of Portrait Images for Face Recognition**
+
 The objective of this task was to preprocess portrait images for subsequent facial recognition algorithms. We were provided with the image 'portrett.png,' which required contrast standardization and geometric normalization to facilitate comparisons with other images in a database. I achieved this by implementing a linear grayscale transformation to obtain an image with a mean value of 127 and a standard deviation of 64. Additionally, I standardized the geometry using an affine transformation to align the eyes and mouth with a predefined mask provided in the file 'geometrimaske.png.' My implementation included both forward and backward transformations, with experiments conducted using both nearest neighbor and bilinear interpolations. I compared the results of forward and backward mapping, as well as the different interpolation techniques.
 
 **Task 2 - Cell Nuclei Detection**
+
 The aim of this task was to implement the entire Canny algorithm from scratch to detect the edges of cell nuclei in the image 'cellekjerner.png.' I began by creating a general implementation of image convolution with a convolution filter. I then proceeded to implement the Canny algorithm, using a genuine Gauss filter and the symmetrical 1D operator for gradient estimation. I also applied the method described in the lecture notes for thinning the gradient magnitude and employed the 8-connection in the hysteretic thresholding step. I experimented with different values of the parameters, including sigma, Th, and Tl, to obtain an image that captured most of the edges of the cell nuclei while minimizing false positives. 
 
 ### Oblig 2
